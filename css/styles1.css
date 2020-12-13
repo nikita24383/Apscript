@@ -592,6 +592,15 @@ pre code {
     max-width: 1140px;
   }
 }
+@media (max-width: 576px) {
+  .container-sm, .container {
+    max-width: 380px;
+    padding-right: 0.01rem;
+    padding-left: 0.01rem;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -4341,7 +4350,13 @@ input[type=button].btn-block {
   background-color: #fff;
   background-clip: border-box;
   border: 1px solid rgba(0, 0, 0, 0.125);
-  border-radius: 0.25rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+  width: 15rem;
+  height: auto;
+}
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.6);
 }
 .card > hr {
   margin-right: 0;
@@ -4373,7 +4388,8 @@ input[type=button].btn-block {
 }
 
 .card-title {
-  margin-bottom: 0.75rem;
+  padding: 0px 0;
+  font-size: large;
 }
 
 .card-subtitle {
@@ -4448,8 +4464,8 @@ input[type=button].btn-block {
 
 .card-img,
 .card-img-bottom {
-  border-bottom-right-radius: calc(0.25rem - 1px);
-  border-bottom-left-radius: calc(0.25rem - 1px);
+  border-bottom-right-radius: calc(0.5rem - 1px);
+  border-bottom-left-radius: calc(0.5rem - 1px);
 }
 
 .card-deck .card {
@@ -10005,7 +10021,7 @@ p {
 }
 
 .page-section {
-  padding: 6rem 0;
+  padding: 4rem 6rem 3rem;
 }
 .page-section h2.section-heading {
   font-size: 2.5rem;
@@ -10493,9 +10509,30 @@ section#contact form#contactForm :-ms-input-placeholder {
   font-weight: 700;
   color: #ced4da;
 }
+@media (max-width: 769px) {
+  section#contact .section-heading {
+    color: #fff;
+    font-size: x-large;
+    text-align: center;
+  }
+  section#contact .row {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+  section#contact{
+    text-align: center;
+  }
+}
 
 .footer {
   text-align: center;
   font-size: 0.9rem;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+@media (max-width: 768px) {
+  section#team {
+    padding: 5rem 0 0;
+  }
 }
