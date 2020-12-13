@@ -9986,7 +9986,7 @@ p {
 }
 
 .page-section {
-  padding: 6rem 0;
+  padding: 4rem 6rem 3rem;
 }
 .page-section h2.section-heading {
   font-size: 2.5rem;
@@ -10476,6 +10476,23 @@ section#contact form#contactForm :-ms-input-placeholder {
   font-weight: 700;
   color: #ced4da;
 }
+@media (max-width: 769px) {
+  section#contact .section-heading {
+    color: #fff;
+    font-size: x-large;
+    text-align: center;
+  }
+  section#contact .row {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+  section#contact{
+    text-align: center;
+  }
+}
+
+
 
 .footer {
   text-align: center;

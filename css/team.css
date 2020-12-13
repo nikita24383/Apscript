@@ -178,7 +178,7 @@ sup {
 }
 
 a {
-  color: #0080f8;
+  color: #30cfd0;
   text-decoration: none;
   background-color: transparent;
 }
@@ -4341,7 +4341,13 @@ input[type=button].btn-block {
   background-color: #fff;
   background-clip: border-box;
   border: 1px solid rgba(0, 0, 0, 0.125);
-  border-radius: 0.25rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.25);
+  width: 17rem;
+  height: auto;
+}
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4);
 }
 .card > hr {
   margin-right: 0;
@@ -4369,11 +4375,13 @@ input[type=button].btn-block {
 .card-body {
   flex: 1 1 auto;
   min-height: 1px;
-  padding: 1.25rem;
+  padding: 0.1rem;
+  color: black;
 }
 
 .card-title {
-  margin-bottom: 0.75rem;
+  padding: 0px 0;
+   
 }
 
 .card-subtitle {
@@ -4430,26 +4438,27 @@ input[type=button].btn-block {
   bottom: 0;
   left: 0;
   padding: 1.25rem;
-  border-radius: calc(0.25rem - 1px);
+  border-radius: calc(0.5rem - 1px);
 }
 
 .card-img,
 .card-img-top,
 .card-img-bottom {
+  padding: 0px;
   flex-shrink: 0;
   width: 100%;
 }
 
 .card-img,
 .card-img-top {
-  border-top-left-radius: calc(0.25rem - 1px);
-  border-top-right-radius: calc(0.25rem - 1px);
+  border-top-left-radius: calc(0.5rem - 1px);
+  border-top-right-radius: calc(0.5rem - 1px);
 }
 
 .card-img,
 .card-img-bottom {
-  border-bottom-right-radius: calc(0.25rem - 1px);
-  border-bottom-left-radius: calc(0.25rem - 1px);
+  border-bottom-right-radius: calc(0.5rem - 1px);
+  border-bottom-left-radius: calc(0.5rem - 1px);
 }
 
 .card-deck .card {
@@ -4523,6 +4532,24 @@ input[type=button].btn-block {
          column-gap: 1.25rem;
     orphans: 1;
     widows: 1;
+  }
+  .card-columns .card {
+    display: inline-block;
+    width: 100%;
+  }
+}
+@media (max-width: 576px) {
+  .card-title{
+    font-size: 2vw;
+  }
+  .card-columns .card {
+    display: inline-block;
+    width: 100%;
+  }
+}
+@media (max-width: 480px) {
+  .card-title{
+    font-size: 3vw;
   }
   .card-columns .card {
     display: inline-block;
@@ -10005,7 +10032,7 @@ p {
 }
 
 .page-section {
-  padding: 6rem 0;
+  padding: 4rem 6rem 3rem;
 }
 .page-section h2.section-heading {
   font-size: 2.5rem;
@@ -10427,10 +10454,9 @@ header.masthead .masthead-heading {
   }
 }
 
-#team{
+#team {
     padding-top: 11rem;
 }
-
 .team-member {
   margin-bottom: 3rem;
   text-align: center;
@@ -10445,6 +10471,12 @@ header.masthead .masthead-heading {
   margin-bottom: 0;
 }
 
+
+@media (max-width: 768px) {
+  section#team {
+    padding: 5rem 0 0;
+  }
+}
 section#contact {
   background-color: #212529;
   background-image: url("../assets/img/map-image.png");
@@ -10498,6 +10530,22 @@ section#contact form#contactForm :-ms-input-placeholder {
   font-weight: 700;
   color: #ced4da;
 }
+@media (max-width: 769px) {
+  section#contact .section-heading {
+    color: #fff;
+    font-size: x-large;
+    text-align: center;
+  }
+  section#contact .row {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+  section#contact{
+    text-align: center;
+  }
+}
+
 
 .footer {
   text-align: center;
