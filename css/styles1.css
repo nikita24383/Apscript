@@ -10066,6 +10066,8 @@ p {
   margin-bottom: 4rem;
 }
 
+
+
 @media (min-width: 768px) {
   section {
     padding: 9rem 0;
@@ -10755,5 +10757,29 @@ section#contact form#contactForm :-ms-input-placeholder {
   }
   50%,100%{
     bottom: 100%;
+  }
+}
+#about{
+  padding: 4rem 1rem 3rem;
+}
+
+@media (max-width: 380px){
+  .timeline-image{
+    display: none;
+  }
+  
+  .timeline::before {
+    display: none;
+  }
+
+  .timeline > li.timeline-inverted > .timeline-panel {
+    padding: 0 20px 20px 0;
+  }
+  .timeline > li .timeline-panel {
+    padding: 0 20px 0 0;
+  }
+
+  .timeline {
+    padding: 0 20px 0 0;
   }
 }
