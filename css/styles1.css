@@ -55,7 +55,7 @@
   z-index: 99;
   border: none;
   outline: none;
-  background-color: #30cfd0;
+  background-color:#00b4d8;
   color: white;
   cursor: pointer;
   padding: 12px;
@@ -63,7 +63,7 @@
 }
 
 #myBtn:hover {
-  background-color: rgb(0, 119, 182);
+  background-color: #0077b6;
 }
 
 html {
@@ -83,7 +83,7 @@ body {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #212529;
+  color: #03071e;
   text-align: left;
   background-color: #fff;
 }
@@ -2466,13 +2466,13 @@ fieldset:disabled a.btn {
 
 .btn-primary {
   color: #fff;
-  background-color: #30cfd0;
-  border-color: #30cfd0;
+  background-color: #00b4d8;
+  border-color: #00b4d8;
 }
 .btn-primary:hover {
   color: #fff;
-  background-color: #0080f8;
-  border-color: #0080f8;
+  background-color: #0077b6;
+  border-color: #0077b6;
 }
 .btn-primary:focus, .btn-primary.focus {
   color: #fff;
@@ -2482,8 +2482,8 @@ fieldset:disabled a.btn {
 }
 .btn-primary.disabled, .btn-primary:disabled {
   color: #fff;
-  background-color: #30cfd0;
-  border-color: #30cfd0;
+  background-color: #00b4d8;
+  border-color: #00b4d8;
 }
 .btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active, .show > .btn-primary.dropdown-toggle {
   color: #fff;
@@ -2705,25 +2705,25 @@ fieldset:disabled a.btn {
 }
 
 .btn-outline-primary {
-  color: #30cfd0;
-  border-color: #30cfd0;
+  color: #00b4d8;
+  border-color: #00b4d8;
 }
 .btn-outline-primary:hover {
   color: #fff;
-  background-color: #30cfd0;
-  border-color: #30cfd0;
+  background-color: #00b4d8;
+  border-color: #00b4d8;
 }
 .btn-outline-primary:focus, .btn-outline-primary.focus {
   box-shadow: 0 0 0 0.2rem rgba(254, 209, 54, 0.5);
 }
 .btn-outline-primary.disabled, .btn-outline-primary:disabled {
-  color: #30cfd0;
+  color: #00b4d8;
   background-color: transparent;
 }
 .btn-outline-primary:not(:disabled):not(.disabled):active, .btn-outline-primary:not(:disabled):not(.disabled).active, .show > .btn-outline-primary.dropdown-toggle {
   color: #fff;
-  background-color: #30cfd0;
-  border-color: #30cfd0;
+  background-color: #00b4d8;
+  border-color: #00b4d8;
 }
 .btn-outline-primary:not(:disabled):not(.disabled):active:focus, .btn-outline-primary:not(:disabled):not(.disabled).active:focus, .show > .btn-outline-primary.dropdown-toggle:focus {
   box-shadow: 0 0 0 0.2rem rgba(254, 209, 54, 0.5);
@@ -4347,12 +4347,12 @@ input[type=button].btn-block {
   flex-direction: column;
   min-width: 0;
   word-wrap: break-word;
-  background-color: #fff;
+  background-color: #03045e;
   background-clip: border-box;
   border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 0.5rem;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
-  width: 15rem;
+  box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.25);
+  width: 17rem;
   height: auto;
 }
 .card:hover {
@@ -4385,11 +4385,31 @@ input[type=button].btn-block {
   flex: 1 1 auto;
   min-height: 1px;
   padding: 1.25rem;
+  color: #fffeee;
 }
 
 .card-title {
   padding: 0px 0;
   font-size: large;
+}
+
+@media (max-width: 576px) {
+  .card-title{
+    font-size: 2vw;
+  }
+  .card-columns .card {
+    display: inline-block;
+    width: 100%;
+  }
+}
+@media (max-width: 480px) {
+  .card-title{
+    font-size: 3vw;
+  }
+  .card-columns .card {
+    display: inline-block;
+    width: 100%;
+  }
 }
 
 .card-subtitle {
@@ -7428,11 +7448,28 @@ button.bg-dark:focus {
 }
 
 .shadow-sm {
-  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 180, 216, 0.075) !important;
 }
 
 .shadow {
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+  box-shadow: 0 0rem 0.5rem 2px rgba(0, 180, 216, 1);
+  animation: mymove 1s infinite;
+}
+@keyframes mymove{
+  50%{
+    box-shadow: 0 0rem 1rem 3px rgba(0, 180, 216, 1);
+  }
+}
+@media (min-width:900px){
+  .shadow {
+    box-shadow: 0 0rem 1rem 2px rgba(0, 180, 216, 1);
+    animation: mymove 1s infinite;
+  }
+  @keyframes mymove{
+    50%{
+      box-shadow: 0 0rem 1rem 5px rgba(0, 180, 216, 1);
+    }
+  }
 }
 
 .shadow-lg {
@@ -10026,7 +10063,7 @@ p {
 }
 
 .page-section {
-  padding: 4rem 6rem 3rem;
+  padding: 3rem 6rem 3rem;
 }
 .page-section h2.section-heading {
   font-size: 2.5rem;
@@ -10040,6 +10077,8 @@ p {
   font-family: "Droid Serif", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   margin-bottom: 4rem;
 }
+
+
 
 @media (min-width: 768px) {
   section {
@@ -10097,7 +10136,7 @@ img::-moz-selection {
 #mainNav {
   padding-top: 1rem;
   padding-bottom: 1rem;
-  background-color: #212529;
+  background-color: #03071e;
 }
 #mainNav .navbar-toggler {
   padding: 0.75rem;
@@ -10105,7 +10144,7 @@ img::-moz-selection {
   font-size: 0.75rem;
   color: #fff;
   text-transform: uppercase;
-  background-color: #30cfd0;
+  background-color: #00b4d8;
   border: 0;
 }
 #mainNav .navbar-brand {
@@ -10121,11 +10160,11 @@ img::-moz-selection {
 #mainNav .navbar-nav .nav-item .nav-link {
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 0.95rem;
-  color: #fff;
+  color: #fffeee;
   letter-spacing: 0.0625em;
 }
 #mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
-  color: #30cfd0;
+  color: #0077b6;
 }
 
 @media (min-width: 992px) {
@@ -10147,7 +10186,7 @@ img::-moz-selection {
   #mainNav.navbar-shrink {
     padding-top: 1rem;
     padding-bottom: 1rem;
-    background-color: #212529;
+    background-color: #03071e;
   }
   #mainNav.navbar-shrink .navbar-brand {
     font-size: 1.25em;
@@ -10540,7 +10579,7 @@ header.masthead .container{
 }
 
 section#contact {
-  background-color: #212529;
+  background-color: #03071e;
   background-image: url("../assets/img/map-image.png");
   background-repeat: no-repeat;
   background-position: center;
@@ -10620,6 +10659,144 @@ section#contact form#contactForm :-ms-input-placeholder {
 
 @media (max-width: 768px) {
   section#team {
-    padding: 5rem 0 0;
+    padding: 3rem 0 0;
+  }
+}
+#team{
+  background-color: #03071e;
+  padding: 1rem 0rem 1rem;
+  justify-content: center;
+  align-items: center;
+}
+#team .container{
+  max-width: 1250px;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+#services{
+  background-color: #03071e;
+  color: #fffeee;
+}
+#prices{
+  background-color: #03071e;
+  color: #fffeee;
+}
+.prob-state{
+  position: relative;
+  display: inline-block;
+  padding: 20px 30px;
+  color: #00b4d8;
+  font-size: large;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.prob-state:hover{
+  text-decoration: none;
+  background-color: #00b4d8;
+  color: #03071e;
+  box-shadow: 0 0 5px #00b4d8,
+              0 0 25px #00b4d8,
+              0 0 50px #00b4d8,
+              0 0 125px #00b4d8;
+}
+.prob-state span{
+  position: absolute;
+  display: block;
+}
+
+.prob-state span:nth-child(1){
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #00b4d8);
+  animation: animate1 1s linear infinite;
+}
+@keyframes animate1{
+  0%{
+    left: -100%;
+  }
+  50%,100%{
+    left: 100%;
+  }
+}
+
+.prob-state span:nth-child(2){
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #00b4d8);
+  animation: animate2 1s linear infinite;
+  animation-delay: 0.25s;
+}
+@keyframes animate2{
+  0%{
+    top: -100%;
+  }
+  50%,100%{
+    top: 100%;
+  }
+}
+
+.prob-state span:nth-child(3){
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, #00b4d8);
+  animation: animate3 1s linear infinite;
+  animation-delay: 0.5s;
+}
+@keyframes animate3{
+  0%{
+    right: -100%;
+  }
+  50%,100%{
+    right: 100%;
+  }
+}
+
+.prob-state span:nth-child(4){
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, #00b4d8);
+  animation: animate4 1s linear infinite;
+  animation-delay: 0.75s;
+}
+@keyframes animate4{
+  0%{
+    bottom: -100%;
+  }
+  50%,100%{
+    bottom: 100%;
+  }
+}
+#portfolio{
+  padding: 4rem 1rem 3rem;
+}
+
+@media (max-width: 380px){
+  .timeline-image{
+    display: none;
+  }
+  
+  .timeline::before {
+    display: none;
+  }
+
+  .timeline > li.timeline-inverted > .timeline-panel {
+    padding: 0 20px 20px 0;
+  }
+  .timeline > li .timeline-panel {
+    padding: 0 20px 0 0;
+  }
+
+  .timeline {
+    padding: 0 20px 0 0;
   }
 }
