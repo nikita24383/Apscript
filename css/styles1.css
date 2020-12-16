@@ -10206,7 +10206,8 @@ img::-moz-selection {
 header.masthead {
   text-align: center;
   color: #fff;
-  background-image: url("../assets/img/bgImage.jpeg");
+  background-color: #03071e;
+  background-image: url("../assets/img/");
   height: 100%;
   width: 100%;
   background-repeat: no-repeat;
