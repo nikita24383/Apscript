@@ -37,7 +37,7 @@
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#portfolio">Round</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#team">Tracks</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#prices">Prizes</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./workshop.html" target="_blank">Workshop</a></li>
+                    <!--<li class="nav-item"><a class="nav-link" href="./workshop.html" target="_blank">Workshop</a></li>-->
                     <li class="nav-item"><a class="nav-link" href="./partner.html" target="_blank">Partners</a></li>
                     <li class="nav-item"><a class="nav-link" href="./team.html" target="_blank">Team</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contact</a></li>
@@ -49,10 +49,11 @@
     <!-- Masthead-->
     <header class="masthead">
         <div class="container">
-            <div class="masthead-heading text-uppercase my-5"><img class="img-fluid" src="https://raw.githubusercontent.com/kshitizJ/Apscript/main/assets/img/APSCRIPT_icon.png" alt="logo"></div>
-            <div class="masthead-subheading">Lorem Ipsum is simply dummy text of the printing and
-                typesetting industry. Lorem Ipsum has been the
-                industry's standard dummy text ever since the 1500s.</div>
+            <div class="masthead-heading text-uppercase `my-5"><img class="img-fluid"
+                    src="https://raw.githubusercontent.com/kshitizJ/Apscript/main/assets/img/APSCRIPT_icon.png"
+                    alt="logo"></div>
+            <div class="masthead-subheading">Most thrilling hackathon experience</div>
+            <div class="masthead-subheading">6th-7th February, 2021</div>
             <div>
                 <a class="prob-state btn-xl text-uppercase js-scroll-trigger" href="#"
                     style="margin: 20px 10px;"><span></span><span></span><span></span><span></span>registor now</a>
@@ -63,8 +64,9 @@
         </div>
     </header>
 
-    <a class="js-scroll-trigger" href="#page-top"><button onclick="topFunction()" id="myBtn"><i
+    <a class="js-scroll-trigger" href="#page-top"><button id="myBtn"><i
                 class="fas fa-chevron-up"></i></button></a>
+    <a href="#"><button class="sticky" id="Registerbtn">Register</button></a>
 
     <!-- Services-->
     <section class="page-section" id="services">
@@ -72,13 +74,8 @@
             <div class="text-center">
                 <h2 class="section-heading text-uppercase">About</h2>
                 <h3 class="section-subheading"></h3>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting
-                    industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
-                    unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived
-                    not only five centuries, but also the leap into electronic typesetting, remaining essentially
-                    unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem
-                    Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including
-                    versions of Lorem Ipsum.</p>
+                <p>IEEE Apsit SB is hosting ApScript Hackathon om 6th & 7th February 2020, a programming endeavor,
+                    drawing crowds from all over the country giving an opportunity to bright minds of our nation to prove their potential and win exciting prizes. Would you be willing to be a sponsor of our national level event?</p>
             </div>
         </div>
     </section>
@@ -128,9 +125,7 @@
                             <p class="text-muted">
                             <ul class="text-muted">
                                 <li>Google Meet with judges.</li>
-                                <li>Participants will show their progress to
-                                    the judges and points will be allotted
-                                    based on the actual work done.</li>
+                                <li>Participants will show their progress to the judges and points will be allotted based on the actual work done.</li>
                                 <li>Judges will give suggestions to
                                     improve</li>
                                 <li>Top 15 teams will be selected.</li>
@@ -152,7 +147,7 @@
                             <ul class="text-muted">
                                 <li>Participants will show a final working
                                     model with improvements suggested by
-                                    judges(if any).</li>
+                                    judges (if any).</li>
                                 <li>Best submission from each track will
                                     receive cash prize (depending on
                                     sponsorship)</li>
@@ -168,11 +163,11 @@
                 <li class="timeline-inverted">
                     <div class="timeline-image shadow" style="background-color: #03071e">
                         <h4>
-                            Be Part
+                            Register
                             <br />
-                            Of Our
+                            Here
                             <br />
-                            ApScript!
+                            (form)
                         </h4>
                     </div>
                 </li>
@@ -221,7 +216,7 @@
             </div>
             <div class="row">
                 <div class="col-12 d-flex justify-content-center">
-                    <a type="button" class="prob-state js-scroll-trigger" data-toggle="modal"
+                    <a type="button" class="prob-state text-uppercase js-scroll-trigger" data-toggle="modal"
                         data-target="#myModal"><span></span><span></span><span></span><span></span> Problem Statement
                     </a>
                 </div>
@@ -327,10 +322,6 @@
                         href="https://www.youtube.com/channel/UCbBPYWJQXwXmE-VmVtdPOcg"><i class="fab fa-youtube"
                             aria-hidden="true"></i></a>
                 </div>
-            </div>
-        </div>
-        <div class="row align-items-center">
-            <div class="section-subheading col-lg-12 text-center" style="color:white">Copyright © Your Website 2020
             </div>
         </div>
     </section>
@@ -557,6 +548,7 @@
 <script>
     //Get the button
     var mybutton = document.getElementById("myBtn");
+    var registerbtn = document.getElementsByClassName("sticky");
 
     // When the user scrolls down 100px from the top of the document, show the button
     window.onscroll = function () { scrollFunction() };
@@ -564,6 +556,8 @@
     function scrollFunction() {
         if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
             mybutton.style.display = "block";
+            registerbtn.style.position ="fixed";
+
         } else {
             mybutton.style.display = "none";
         }
