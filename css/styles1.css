@@ -10183,7 +10183,6 @@ img::-moz-selection {
     transition: height 0.3s ease-in-out;
   }
   #mainNav.navbar-shrink {
-    margin-top: 2rem;
     padding-top: 1rem;
     padding-bottom: 1rem;
     background-color: #03071e;
@@ -10200,6 +10199,12 @@ img::-moz-selection {
   }
   #mainNav .navbar-nav .nav-item:last-child {
     margin-right: 0;
+  }
+}
+
+@media (max-width: 992px){
+  #mainNav.navbar-shrink{
+    margin-top: 2rem;
   }
 }
 
