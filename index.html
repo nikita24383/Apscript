@@ -567,17 +567,18 @@
     window.onscroll = function () { scrollFunction() };
 
     function scrollFunction() {
-        if((document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) && screen.width < 768){
-            registerbtn.style.display = "block";
-        }
-        else{
-            registerbtn.style.display = "none";
-        }
         if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
             mybutton.style.display = "block";
 
         } else {
             mybutton.style.display = "none";
+        }
+        if((document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) && screen.width < 768){
+            registerbtn.style.display = "block";
+            mybutton.style.display = "block";
+        }
+        else{
+            registerbtn.style.display = "none";
         }
     }
 </script>
