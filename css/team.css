@@ -10182,7 +10182,6 @@ img::-moz-selection {
 header.masthead {
   text-align: center;
   color: #fff;
-  background-image: url("../assets/img/header-bg.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -10573,4 +10572,27 @@ section#contact form#contactForm :-ms-input-placeholder {
   text-align: center;
   font-size: 0.9rem;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+#Registerbtn{
+  display: none;
+}
+@media (max-width: 768px){
+  #Registerbtn{
+    position: fixed;
+    bottom: 20px;
+    left: 30px;
+    z-index: 1000;
+    border: none;
+    outline: none;
+    background-color:#00b4d8;
+    color: white;
+    cursor: pointer;
+    padding: 12px;
+    border-radius: 4px;
+  }
+}
+#contact a:hover{
+  text-decoration: none;
+  color: #fffeee;
 }

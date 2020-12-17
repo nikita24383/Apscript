@@ -10788,13 +10788,11 @@ section#contact form#contactForm :-ms-input-placeholder {
     padding: 0 20px 0 0;
   }
 }
-
 #Registerbtn{
   display: none;
 }
 @media (max-width: 768px){
   #Registerbtn{
-    display: block;
     position: fixed;
     bottom: 20px;
     left: 30px;

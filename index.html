@@ -65,7 +65,7 @@
     </header>
 
     <a class="js-scroll-trigger" href="#page-top"><button id="myBtn"><i class="fas fa-chevron-up"></i></button></a>
-    <a href="#"><button class="sticky" id="Registerbtn">Register</button></a>
+    <a href="#"><button id="Registerbtn">Register</button></a>
 
     <section class="page-section">
         <div class="row">
@@ -561,15 +561,20 @@
 <script>
     //Get the button
     var mybutton = document.getElementById("myBtn");
-    var registerbtn = document.getElementsByClassName("sticky");
+    var registerbtn = document.getElementById("Registerbtn");
 
     // When the user scrolls down 100px from the top of the document, show the button
     window.onscroll = function () { scrollFunction() };
 
     function scrollFunction() {
+        if((document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) && screen.width < 768){
+            registerbtn.style.display = "block";
+        }
+        else{
+            registerbtn.style.display = "none";
+        }
         if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
             mybutton.style.display = "block";
-            registerbtn.style.position = "fixed";
 
         } else {
             mybutton.style.display = "none";

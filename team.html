@@ -23,7 +23,7 @@
     <!-- Navigation-->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
         <div class="container">
-            <a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="assets/img/APSCRIPT_icon.png"
+            <a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="assets/img/APSCRIPT_icon.webp"
                     alt="Apscript"></a>
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
                 data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
@@ -53,8 +53,8 @@
             <div class="text-center">
                 <h2 class="section-heading text-uppercase">Team</h2>
             </div>
-            <div class="row text-center d-flex justify-content-center my-4">
-                <div class="col-4 mb-3 mx-auto d-flex justify-content-center">
+            <div class="row text-center my-4">
+                <div class="col-6 mb-3 mx-auto d-flex justify-content-center">
                     <div class="card shadow">
                         <img src="assets/img/team/Aaditya_Muley.jpg" class="card-img rounded-circle"
                             alt="Aaditya Muley">
@@ -66,9 +66,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-4 col-4 mx-auto d-flex justify-content-center">
-                </div>
-                <div class="col-lg-4 col-md-4 col-4 mb-3 mx-auto d-flex justify-content-center">
+                <div class="col-6 mb-3 mx-auto d-flex justify-content-center">
                     <div class="card  shadow">
                         <img src="assets/img/team/Anjali Masur.jpg" class="card-img rounded-circle" alt="Vatsal Mehta"
                             style="width: 100%;">
@@ -258,8 +256,8 @@
         </div>
     </section>
 
-    <a class="nav-link js-scroll-trigger" href="#page-top"><button class="btn" onclick="topFunction()" id="myBtn"><i
-                class="fas fa-chevron-up"></i></button></a>
+    <a class="js-scroll-trigger" href="#page-top"><button id="myBtn"><i class="fas fa-chevron-up"></i></button></a>
+    <a href="#"><button class="sticky" id="Registerbtn">Register</button></a>
 
     <!-- Clients
     <div class="py-5">
@@ -553,13 +551,21 @@
 <script>
     //Get the button
     var mybutton = document.getElementById("myBtn");
+    var registerbtn = document.getElementById("Registerbtn");
 
     // When the user scrolls down 100px from the top of the document, show the button
     window.onscroll = function () { scrollFunction() };
 
     function scrollFunction() {
-        if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+        if((document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) && screen.width < 768){
+            registerbtn.style.display = "block";
+        }
+        else{
+            registerbtn.style.display = "none";
+        }
+        if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
             mybutton.style.display = "block";
+
         } else {
             mybutton.style.display = "none";
         }

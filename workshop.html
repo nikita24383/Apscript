@@ -23,7 +23,7 @@
     <!-- Navigation-->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
         <div class="container">
-            <a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="assets/img/APSCRIPT_icon.png"
+            <a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="assets/img/APSCRIPT_icon.webp"
                     alt="Apscript"></a>
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
                 data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
@@ -381,6 +381,8 @@
     </div>-->
     <!-- Contact-->
 
+    <a href="#"><button id="Registerbtn">Register</button></a>
+
     <section class="page-section" id="contact">
         <div class="container">
             <div class="text-center">
@@ -646,5 +648,22 @@
     <!-- Core theme JS-->
     <script src="js/scripts.js"></script>
 </body>
+
+<script>
+    //Get the button
+    var registerbtn = document.getElementById("Registerbtn");
+
+    // When the user scrolls down 100px from the top of the document, show the button
+    window.onscroll = function () { scrollFunction() };
+
+    function scrollFunction() {
+        if((document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) && screen.width < 768){
+            registerbtn.style.display = "block";
+        }
+        else{
+            registerbtn.style.display = "none";
+        }
+    }
+</script>
 
 </html>
