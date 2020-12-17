@@ -10808,3 +10808,7 @@ section#contact form#contactForm :-ms-input-placeholder {
     border-radius: 4px;
   }
 }
+#contact a:hover{
+  text-decoration: none;
+  color: #fffeee;
+}
