@@ -10810,3 +10810,16 @@ section#contact form#contactForm :-ms-input-placeholder {
   text-decoration: none;
   color: #fffeee;
 }
+
+#partners {
+  padding-top: 9rem;
+}
+
+@media (max-width:900px){
+  #partners {
+    padding-top: 5rem;
+  }
+}
+#communityPartners{
+  padding-top: 1rem;
+}

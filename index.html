@@ -68,10 +68,11 @@
     <a href="#"><button id="Registerbtn">Register</button></a>
 
     <section class="page-section">
-        <div class="row">
-            <div class="col-12">
-                <iframe src="https://drive.google.com/file/d/1SPGvraJkgZMmqYO4fwf9hrnYSNKq3vzc/view?usp=sharing"
-                    frameborder="0"></iframe>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 d-flex justify-content-center">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/GSjckjc4q3Q" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                </div>
             </div>
         </div>
     </section>
@@ -573,11 +574,11 @@
         } else {
             mybutton.style.display = "none";
         }
-        if((document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) && screen.width < 768){
+        if ((document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) && screen.width < 768) {
             registerbtn.style.display = "block";
             mybutton.style.display = "block";
         }
-        else{
+        else {
             registerbtn.style.display = "none";
         }
     }
