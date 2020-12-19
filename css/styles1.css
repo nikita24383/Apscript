@@ -10844,3 +10844,7 @@ section#contact form#contactForm :-ms-input-placeholder {
 #communityPartners{
   padding-top: 1rem;
 }
+#ambassador{
+  background-color: #03071e;
+  color: #fffeee;
+}
