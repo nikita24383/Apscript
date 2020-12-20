@@ -10851,6 +10851,7 @@ section#contact form#contactForm :-ms-input-placeholder {
 #communityPartners{
   padding-top: 1rem;
 }
+
 .partner-logo {
    
             display: block;
@@ -10862,4 +10863,9 @@ section#contact form#contactForm :-ms-input-placeholder {
 
 ul li {
   text-align: left;  
+
+#ambassador{
+  background-color: #03071e;
+  color: #fffeee;
+
 }
