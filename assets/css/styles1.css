@@ -10258,9 +10258,9 @@ header.masthead .container{
     padding: 0.8rem 1.2rem;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   header.masthead {
-    padding-top: 8rem;
+    padding-top: 11rem;
     padding-bottom: 1rem;
   }
   header.masthead .masthead-subheading {
@@ -10581,7 +10581,7 @@ header.masthead .container{
 
 section#contact {
   background-color: #03071e;
-  background-image: url("../assets/img/map-image.png");
+  background-image: url("/assets/img/map-image.png");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -10682,7 +10682,7 @@ section#contact form#contactForm :-ms-input-placeholder {
     padding: 0 0 0;
   }
 }
-#services{
+#about{
   background-color: #03071e;
   color: #fffeee;
 }
