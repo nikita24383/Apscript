@@ -10084,8 +10084,6 @@ p {
   margin-bottom: 4rem;
 }
 
-
-
 @media (min-width: 768px) {
   section {
     padding: 9rem 0;
@@ -10663,24 +10661,24 @@ section#contact form#contactForm :-ms-input-placeholder {
   padding-top: 2rem;
 }
 
-#team{
+#tracks{
   background-color: #03071e;
   padding: 0rem 0rem 0rem;
   justify-content: center;
   align-items: center;
 }
-#team .container{
+#tracks .container{
   max-width: 1250px;
   margin-left: 2rem;
   margin-right: 2rem;
 }
 @media (max-width: 768px) {
-  section#team {
+  section#tracks {
     padding: 3rem 0 0;
   }
 }
 @media(max-width: 380px){
-  section#team {
+  section#tracks {
     padding: 0 0 0;
   }
 }
@@ -10688,7 +10686,7 @@ section#contact form#contactForm :-ms-input-placeholder {
   background-color: #03071e;
   color: #fffeee;
 }
-#prices{
+#prizes{
   background-color: #03071e;
   color: #fffeee;
 }
@@ -10853,18 +10851,23 @@ section#contact form#contactForm :-ms-input-placeholder {
 }
 
 .partner-logo {
-   
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            margin-bottom: auto;
-            padding-bottom: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: auto;
+  padding-bottom: 10px;
 }
 
 ul li {
   text-align: left;  
 }
 #ambassador {
+  padding-top: 11rem;
   background-color: #03071e;
   color: #fffeee;
+}
+@media (max-width: 990px){
+  #ambassador{
+    padding-top: 8rem;
+  }
 }
