@@ -10581,7 +10581,7 @@ header.masthead .container{
 
 section#contact {
   background-color: #03071e;
-  background-image: url("/assets/img/map-image.png");
+  background-image: url("https://raw.githubusercontent.com/kshitizJ/Apscript/main/assets/img/map-image.png");
   background-repeat: no-repeat;
   background-position: center;
 }
