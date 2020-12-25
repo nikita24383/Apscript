@@ -16,7 +16,9 @@
         type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
     <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="css/workshop.css" rel="stylesheet" />
+    <link href="./assets/css/styles1.css" rel="stylesheet" />
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+    <link href="./assets/css/animate.css" rel="stylesheet" />
 </head>
 
 <body id="page-top">
@@ -33,20 +35,25 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav text-uppercase ml-auto">
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="index.html#services">About</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="index.html#portfolio">Rounds</a></li>
+                    <!--<li class="nav-item"><a class="nav-link js-scroll-trigger" href="index.html#services">About</a></li>-->
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="index.html#portfolio">Rounds</a>
+                    </li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="index.html#team">Tracks</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="index.html#prices">Prizes</a></li>
-                    <li class="nav-item"><a class="nav-link" href="" target="_blank">Workshop</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./partner.html" target="_blank">Partners</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./team.html" target="_blank">Team</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="./ambassador.html">Ambassador</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="">Workshop</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./partner.html">Partners</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./team.html">Team</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contact</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <section class="page-section" id="team">
+    <a href="" data-toggle="modal" data-target="#registerModal"><button id="Registerbtn">Register</button></a>
+
+    <section class="page-section" id="workshop">
         <div class="container">
             <div class="text-center">
                 <h2 class="section-heading text-uppercase">Workshop</h2>
@@ -59,25 +66,21 @@
                 </ol>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img class="d-block w-100"
-                            src="https://raw.githubusercontent.com/kshitizJ/Apscript/main/assets/img/header-bg.jpg"
-                            alt="First slide">
+                        <img class="d-block w-100" src="./assets/img/workshop.png" alt="First slide">
                         <div class="carousel-caption d-none d-md-block">
                             <h5>WORKSHOP 1</h5>
                             <p>This is workshop</p>
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img class="d-block w-100"
-                            src="https://raw.githubusercontent.com/kshitizJ/Apscript/main/assets/img/bgImage.jpeg"
-                            alt="Second slide">
+                        <img class="d-block w-100" src="./assets/img/workshop.png" alt="Second slide">
                         <div class="carousel-caption d-none d-md-block">
                             <h5>WORKSHOP 2</h5>
                             <p>This is workshop</p>
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img class="d-block w-100" src="..." alt="Third slide">
+                        <img class="d-block w-100" src="./assets/img/workshop.png" alt="Third slide">
                         <div class="carousel-caption d-none d-md-block">
                             <h5>WORKSHOP 3</h5>
                             <p>This is workshop</p>
@@ -95,8 +98,6 @@
             </div>
         </div>
     </section>
-
-    <a href="#"><button id="Registerbtn">Register</button></a>
 
     <section class="page-section" id="contact">
         <div class="container">
@@ -128,13 +129,29 @@
             </div>
         </div>
     </section>
+    <div id="registerModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content" style="background-color: #03071e; color: #fffeee;">
+                <div class="modal-header">
+                    <h4 class="modal-title">Registration</h4>
+                    <button type="button" class="close" data-dismiss="modal" style="color: #fffeee;">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <p>Registrations will start soon.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
     <!-- Bootstrap core JS-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Third party plugin JS-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
     <!-- Core theme JS-->
-    <script src="js/scripts.js"></script>
+    <script src="./assets/js/scripts.js"></script>
 </body>
 
 <script>
@@ -145,10 +162,10 @@
     window.onscroll = function () { scrollFunction() };
 
     function scrollFunction() {
-        if((document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) && screen.width < 768){
+        if ((document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) && screen.width < 768) {
             registerbtn.style.display = "block";
         }
-        else{
+        else {
             registerbtn.style.display = "none";
         }
     }
