@@ -10862,7 +10862,7 @@ ul li {
   text-align: left;  
 }
 #ambassador {
-  padding-top: 11rem;
+  padding-top: 90px;
   background-color: #03071e;
   color: #fffeee;
 }
@@ -10870,4 +10870,8 @@ ul li {
   #ambassador{
     padding-top: 8rem;
   }
+}
+
+.AmbassadorImage {
+  opacity: 0.85;
 }
