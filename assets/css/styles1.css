@@ -10884,11 +10884,3 @@ ul li {
   padding-bottom: 0.5rem;
   color: #fffeee;
 }
-.partnerBtn{
-  display: none;
-}
-@media (max-width: 500px){
-  .partnerBtn{
-    display: block;
-  }
-}
