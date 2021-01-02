@@ -54,3 +54,31 @@
     // Collapse the navbar when page is scrolled
     $(window).scroll(navbarCollapse);
 })(jQuery); // End of use strict
+
+let launchDate = new Date("Feb 5, 2021 08:00:00").getTime();
+let timer = setInterval(tick, 1000);
+
+function tick(){
+    let now = new Date().getTime();
+    let t = launchDate-now;
+    if(t>0){
+        let days = Math.floor(t/(1000*60*60*24));
+        if(days < 10)
+            days = "0" + days;
+        
+        let hours = Math.floor((t%(1000*60*60*24))/(1000*60*60));
+        if(hours < 10)
+            hours = "0" + hours;
+
+        let min = Math.floor((t%(1000*60*60))/(1000*60));
+        if(min < 10)
+            min = "0" + min;
+        
+        let sec = Math.floor((t%(1000*60))/(1000));
+        if(sec < 10)
+            sec = "0" + sec;
+        
+        let time = `${days} : ${hours} : ${min} : ${sec}`
+        document.querySelector('.countdown').innerHTML = time;
+    }
+}
