@@ -10884,3 +10884,20 @@ ul li {
   padding-bottom: 0.5rem;
   color: #fffeee;
 }
+
+.countdown {
+  color: #fffeee;
+  font-size: 36px;
+  font-weight: 400; }
+  @media screen and (min-width: 480px) {
+    .count-down {
+      font-size: 42px; } }
+  @media screen and (min-width: 768px) {
+    .count-down {
+      font-size: 56px; } }
+  @media screen and (min-width: 1024px) {
+    .count-down {
+      font-size: 72px; } }
+  @media screen and (min-width: 1280px) {
+    .count-down {
+      font-size: 88px; } }
