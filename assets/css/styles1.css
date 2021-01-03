@@ -10893,13 +10893,14 @@ ul li {
 	height: 0px;
 	padding-bottom: 100%;
 	position: relative;	
-	width: 100%;
 }
 
 .clock-canvas {
 	background-color: rgba(255, 255, 255, .1);
 	border-radius: 50%;
-	height: 0px;
+  height: 0px;
+  max-width: 200px;
+  max-height: 200px;
 }
 
 .text {
@@ -10908,11 +10909,12 @@ ul li {
 	font-weight: bold;	
 	margin-top: -50px;
 	position: absolute;
-	top: 50%;
+	top: 27%;
 	text-align: center;
 	text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
-	width: 100%;
+	width: 80%;
 }
+
 
 .text .val {
 	font-size: 50px;
@@ -10921,9 +10923,41 @@ ul li {
 .text .type-time {
 	font-size: 20px;
 }
-
-@media (max-width: 991px) {
+@media (min-width: 992px) and (max-width: 1199px){
+  .text{
+    top: 35%;
+    width: 90%;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px){
+  .text{
+    top: 23%;
+    width: 60%;
+  }
+  .clock-item {
+		margin-bottom: 30px;		
+	}
+}
+@media (min-width: 578px) and (max-width: 767px){
+  .text{
+    top: 30%;
+    width: 85%;
+  }
+  .clock-item {
+		margin-bottom: 30px;		
+	}
+}
+@media (max-width: 577px) {
+  .text{
+    top: 33%;
+    width: 100%;
+  }
 	.clock-item {
 		margin-bottom: 30px;		
 	}
+}
+@media (min-width: 1200px){
+  .countdown{
+    max-height: 200px;
+  }
 }
