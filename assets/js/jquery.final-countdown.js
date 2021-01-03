@@ -48,19 +48,19 @@
             },
             seconds: {
                 borderColor: '#5fff6d',
-                borderWidth: '5'
+                borderWidth: '7'
             },
             minutes: {
                 borderColor: '#00f2a4',
-                borderWidth: '5'
+                borderWidth: '7'
             },
             hours: {
                 borderColor: '#00e0cb',
-                borderWidth: '5'
+                borderWidth: '7'
             },
             days: {
                 borderColor: '#00b4d8',
-                borderWidth: '5'
+                borderWidth: '7'
             }
         }, options);
 
