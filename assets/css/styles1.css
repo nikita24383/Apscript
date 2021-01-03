@@ -10886,11 +10886,6 @@ ul li {
 }
 
 
-.countdown-container {
-  font-family: 'Raleway', 'Arial', sans-serif;
-	position: relative;
-}
-
 .clock-item .inner {
 	height: 0px;
 	padding-bottom: 100%;
@@ -10924,14 +10919,8 @@ ul li {
 	font-size: 20px;
 }
 
-@media (min-width: 768px) and (max-width: 991px) {
+@media (max-width: 991px) {
 	.clock-item {
 		margin-bottom: 30px;		
-	}
-}
-
-@media (max-width: 767px) {
-	.clock-item {
-		margin: 0px 30px 30px 30px;
 	}
 }
