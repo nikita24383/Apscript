@@ -514,9 +514,9 @@
         'use strict';
 
         $('.countdown').final_countdown({
-            'start': Math.floor(new Date("Nov 1, 2020 08:00:00").getTime() / 1000),
+            'start': Math.floor(new Date("Nov 1, 2020 00:00:00").getTime() / 1000),
             'end': Math.floor(new Date("Feb 5, 2021 08:00:00").getTime() / 1000),
-            'now': Math.floor(new Date("Jan 3, 2021 12:00:00").getTime() / 1000)
+            'now': Math.floor(new Date().getTime() / 1000)
         });
     });
 </script>
