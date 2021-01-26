@@ -2909,7 +2909,7 @@ fieldset:disabled a.btn {
   text-decoration: none;
 }
 .btn-link:hover {
-  color: #e6b301;
+  color: #fffeee;
   text-decoration: underline;
 }
 .btn-link:focus, .btn-link.focus {
@@ -10912,7 +10912,7 @@ ul li {
 	top: 27%;
 	text-align: center;
 	text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
-	width: 80%;
+	width: 76%;
 }
 
 
